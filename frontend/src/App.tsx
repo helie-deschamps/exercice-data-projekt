@@ -1,5 +1,6 @@
 import PageTitle from "./components/page_title/PageTitle";
 import QuestionCard from "./components/question_card/QuestionCard";
+import SearchSection from "./components/search_section/SearchSection";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         "createdAt": "2025-01-15T10:00:00Z",
         "updatedAt": "2025-01-15T10:00:00Z"
       }} />
-      <div style={{ gridColumn: '1 / span 2', gridRow: '2' }}>c</div>
+      <SearchSection style={{ gridColumn: '1 / span 2', gridRow: '2' }} />
       <div style={{ gridColumn: '1 / span 2', gridRow: '3' }}>d</div>
     </div>
   );
