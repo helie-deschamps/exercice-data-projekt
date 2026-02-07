@@ -1,5 +1,6 @@
 import React from 'react';
 import CategoryTile from "./components/category_tile/CategoryTile";
+import ContactTile from "./components/contact_tile/ContactTile";
 import PageTitle from "./components/page_title/PageTitle";
 import QuestionCard from "./components/question_card/QuestionCard";
 import SearchSection from "./components/search_section/SearchSection";
@@ -37,6 +38,7 @@ function App() {
           "order": 1
         }} style={{ flex: 1 }}/>
       </div>
+      <ContactTile style={{ gridColumn: '1 / span 2', gridRow: '4' }} />
     </div>
   );
 }
@@ -44,10 +46,11 @@ function App() {
 const gridStyle: React.CSSProperties = {
   display: 'grid',
   gridTemplateColumns: '2fr 1fr',
-  gridTemplateRows: 'auto auto auto',
+  gridTemplateRows: 'auto auto auto auto',
   gap: '1rem',
   maxWidth: '1286px',
-  margin: '60px auto 0',
+  margin: '60px auto',
+  paddingBottom: '60px',
 };
 
 export default App
