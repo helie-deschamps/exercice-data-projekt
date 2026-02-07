@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import { QuestionCategory } from "../types/QuestionCategory";
 
-const getQuestionCategoryImage = (category: QuestionCategory): JSX.Element | null => {
+const getQuestionCategoryImage = (_category: QuestionCategory): JSX.Element | null => {
     return <svg width="158" height="140" viewBox="0 0 158 140" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_3804_757)">
             <path d="M61.2143 73.0138C62.7643 73.7834 86.5796 73.1 89.2119 72.7551C89.9687 72.6499 89.7412 71.579 89.0152 71.609C85.4294 71.677 62.1986 71.6588 61.1898 72.2687C61.1184 72.3027 61.0584 72.3568 61.0173 72.4244C60.9762 72.492 60.9556 72.5701 60.9582 72.6493C60.9608 72.7284 60.9864 72.805 61.0319 72.8698C61.0774 72.9345 61.1408 72.9846 61.2143 73.0138Z" fill="black"/>

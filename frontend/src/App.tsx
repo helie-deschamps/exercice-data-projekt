@@ -1,3 +1,4 @@
+import React from 'react';
 import CategoryTile from "./components/category_tile/CategoryTile";
 import PageTitle from "./components/page_title/PageTitle";
 import QuestionCard from "./components/question_card/QuestionCard";
