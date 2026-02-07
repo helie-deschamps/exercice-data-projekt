@@ -1,0 +1,514 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Usage & Fonctionnalités",
+      "slug": "usage-fonctionnalites",
+      "icon": "🎮",
+      "description": "Tout ce qui concerne la création, la gestion et l'exploitation d'une opération sur la plateforme Data Game, de A à Z.",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "Gestion & Administration",
+      "slug": "gestion-administration",
+      "icon": "⚙️",
+      "description": "Tout ce qui concerne les accès, la sécurité, les utilisateurs, la facturation et la relation client.",
+      "order": 2
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "name": "Création & Gestion d'une opération",
+      "description": "Créer, configurer, tester et gérer vos jeux-concours",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "name": "Règlement & Conformité légale",
+      "description": "Générer, importer et gérer le règlement de jeu",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "name": "Lots, Gagnants & Tirage au sort",
+      "description": "Configuration des lots et gestion des gagnants",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "name": "Personnalisation & Écrans de jeu",
+      "description": "Personnaliser les écrans et formulaires",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "name": "Diffusion & Marketing",
+      "description": "Diffuser et promouvoir vos opérations",
+      "order": 5
+    },
+    {
+      "id": 6,
+      "categoryId": 1,
+      "name": "Données, Statistiques & Rapports",
+      "description": "Consulter, exporter et analyser vos données",
+      "order": 6
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "name": "Clients, partenaires & Points de vente",
+      "description": "Gérer vos clients et leurs points de vente",
+      "order": 1
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "name": "Comptes, Accès & Sécurité",
+      "description": "Gérer les utilisateurs et leurs rôles",
+      "order": 2
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "name": "Abonnements, Modules & Facturation",
+      "description": "Gérer votre abonnement et vos factures",
+      "order": 3
+    },
+    {
+      "id": 10,
+      "categoryId": 2,
+      "name": "Crédits, Fidélité & Parrainage",
+      "description": "Gérer vos crédits et programmes de fidélité",
+      "order": 4
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "question": "Comment est organisée l'interface de Data Game ?",
+      "answer": "L'interface de Data Game est organisée autour de plusieurs zones principales :\n\n**📌 Barre de navigation principale**\nVous y retrouvez les rubriques clés :\n- **Tableau de bord** : Vue d'ensemble de vos opérations\n- **Opérations** : Liste et gestion de vos jeux-concours\n- **Statistiques** : Données globales de toutes vos opérations\n- **Listes** : Utilisateurs, Clients & Partenaires\n- **Compte** : Abonnement, crédits, intégrations\n\n**👤 Zone \"Profil & Compte\" (en haut à droite)**\nAccès à :\n- Vos informations personnelles\n- Les paramètres du compte\n- L'abonnement et les factures\n- Le suivi des crédits\n\n**⚡ Zone \"Accès rapide / notifications\"**\nVous y voyez :\n- Les notifications (succès, alertes, informations)\n- Le bouton pour relancer la visite guidée (walktour)\n- Un résumé des crédits restants\n\n**🎮 Bloc \"Opérations en cours\" (sur le tableau de bord)**\nUn carrousel qui permet d'accéder en un clic à vos jeux actifs.\n\n**📊 Bloc \"Statistiques globales\"**\nVue synthétique des opérations, du nombre total de participations, de gagnants, etc.",
+      "tags": ["interface", "navigation", "tableau de bord", "menu", "organisation"],
+      "order": 1,
+      "createdAt": "2025-01-15T10:00:00Z",
+      "updatedAt": "2025-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "question": "Comment créer et configurer une nouvelle opération (jeu concours) ?",
+      "answer": "Créer un jeu concours sur Data Game est pensé comme un parcours fluide et guidé. En quelques minutes, vous posez les bases de votre opération, sans compétences techniques, et vous pouvez la faire évoluer à votre rythme avant activation.\n\n**Étape 1 – Créer une opération (point d'entrée)**\n\nDepuis :\n- le **tableau de bord**, ou\n- l'onglet **Opérations**,\n\ncliquez sur **« Créer une opération »**.\n\n👉 À ce stade, vous entrez dans un mode **Brouillon** : rien n'est diffusé, tout reste modifiable.\n\n**Étape 2 – Définir les informations essentielles**\n\nVous commencez par poser le socle de votre jeu :\n\n- **Nom de l'opération** (ex. : Jeu Été 2025)\n- **Mécanique de jeu** : Instants gagnants, Codes gagnants, Tirage au sort\n- **Gameplay** (si mécanique \"instants gagnants\") : Bandit manchot, Carte à gratter, Roue de la chance, Clic & Win\n- **Période de validité** : Date de début et Date de fin\n\n**ℹ️ À savoir :**\n- Une opération dure au minimum 1 jour\n- Chaque jour supplémentaire consomme 5 crédits\n- Dès la création du brouillon, un **QR Code** est automatiquement généré\n\n**Étape 3 – Activer les options payantes (facultatif)**\n\nSelon vos besoins :\n- **Jeu avec obligation d'achat** → module preuve d'achat\n- **Lots par tirage au sort** → module tirage au sort automatique\n- **Rappel de l'opération par email** → module email de relance\n- **Dépôt du règlement chez un huissier** → module dédié\n\n**Étape 4 – Associer un client ou partenaire**\n\nSi l'opération est réalisée pour une marque, un distributeur ou un client final, vous pouvez sélectionner un client existant ou en créer un nouveau.\n\n**Étape 5 – Estimation automatique du coût en crédits**\n\nData Game calcule automatiquement le nombre de crédits nécessaires selon la durée et les options activées.\n\n**Étape 6 – Enregistrer et poursuivre**\n\nVous pouvez enregistrer le brouillon, quitter et y revenir plus tard. Les étapes suivantes : personnalisation des écrans, règlement, lots, formulaires.\n\n**Étape 7 – Prévisualiser l'expérience joueur**\n\nAvant toute activation, prévisualisez chaque écran et testez le parcours complet du joueur.\n\n👉 La prévisualisation est la dernière étape recommandée avant l'activation.",
+      "tags": ["création", "opération", "jeu concours", "configuration", "brouillon", "mécanique"],
+      "order": 2,
+      "createdAt": "2025-01-15T10:05:00Z",
+      "updatedAt": "2025-01-15T10:05:00Z"
+    },
+    {
+      "id": 3,
+      "groupId": 1,
+      "question": "Peut-on tester une opération avant de la publier ?",
+      "answer": "Oui. Tant que l'opération est au statut **\"Brouillon\"**, vous pouvez :\n\n**✅ Modifier tous les paramètres**\n- Configuration, écrans, règlement, lots...\n\n**👁️ Utiliser la prévisualisation**\n- Depuis l'onglet **Configuration** ou **Édition des écrans**\n- Navigation écran par écran pour simuler le parcours utilisateur\n\n**🎮 Tester les mécaniques de jeu**\n- Instants gagnants, formulaires, redirections...\n\n**⚠️ Important :** Aucune participation \"réelle\" n'est enregistrée tant que votre opération n'est pas activée.\n\n**💡 Astuce :** Utilisez la prévisualisation régulièrement pendant la configuration pour valider vos modifications au fur et à mesure.",
+      "tags": ["test", "prévisualisation", "brouillon", "simulation", "vérification"],
+      "order": 3,
+      "createdAt": "2025-01-16T09:20:00Z",
+      "updatedAt": "2025-01-16T09:20:00Z"
+    },
+    {
+      "id": 4,
+      "groupId": 1,
+      "question": "Activer une opération : comment ça marche et qu'est-ce que ça déclenche ?",
+      "answer": "L'activation est l'étape qui fait passer votre opération du mode **Brouillon** au mode **Live**. Elle \"verrouille\" le socle de l'opération et lance tout ce qui permet sa diffusion et son suivi.\n\n**1️⃣ Avant d'activer : faire le check minimum**\n\nDepuis votre opération (statut Brouillon), assurez-vous d'avoir renseigné au moins :\n- **Configuration** (nom, dates, mécanique, paramètres clés)\n- **Écrans** (contenus et visuels essentiels)\n- **Lots** (dotations et règles de distribution)\n- **Règlement** (créé/importé et prêt)\n\n**Objectif :** éviter d'activer une opération \"techniquement valide\" mais incomplète côté expérience joueur ou conformité.\n\n**2️⃣ Activer l'opération**\n\nDans la fiche opération, cliquez sur **Activer**.\nLa plateforme vous demande de confirmer car l'activation :\n- déclenche la **consommation des crédits** nécessaires\n- bascule l'opération dans un **état de production**\n\n**3️⃣ Ce que l'activation déclenche immédiatement**\n\nUne fois activée :\n- votre opération obtient ses **éléments de diffusion** :\n  - un **QR Code** (prêt à être téléchargé et imprimé)\n  - une **URL** (prête à être partagée)\n- les **statistiques** commencent à être collectées dès que le jeu est consulté / joué\n- les **lots, règles de gain, formulaires et écrans** deviennent \"la référence\" utilisée pour toutes les participations\n\n**4️⃣ Ce qui change ensuite dans vos droits de modification**\n\nAprès activation, vous pourrez encore ajuster des éléments \"marketing\" (contenus d'écrans, visuels, textes), mais certains **paramètres structurants deviennent non modifiables** pour garantir la cohérence du jeu (mécanique, règlement, période, etc.).\n\n**💡 Bon réflexe :**\nSi vous devez faire une modification majeure après activation (mécanique, règlement, structure globale), la pratique recommandée est :\n1. **Dupliquer** l'opération\n2. **Corriger** la nouvelle version\n3. **Activer** la version corrigée",
+      "tags": ["activation", "publication", "live", "crédits", "url", "qr code"],
+      "order": 4,
+      "createdAt": "2025-01-17T11:45:00Z",
+      "updatedAt": "2025-02-01T16:20:00Z"
+    },
+    {
+      "id": 5,
+      "groupId": 1,
+      "question": "Que puis-je modifier ou non après l'activation d'une opération ?",
+      "answer": "Après activation, certains éléments restent modifiables, d'autres non.\n\n**✅ Modifiable :**\n- Textes et visuels des différents écrans\n- Images des lots\n- Chances de gain et périodes gagnantes (instants gagnants)\n- Mise en pause / réactivation de l'opération\n- Certains champs de formulaire (si cela ne casse pas la logique de collecte déjà en cours)\n\n**❌ Non modifiable :**\n- URL de l'opération\n- Nom initial de l'opération\n- Période du jeu (dates de début et fin)\n- Règlement associé\n- Mécanique de jeu (IG, CG, TAS...)\n- Liste des lots structurants (vous pouvez cependant ajuster paramètres & dotations dans certains cas)\n- Structure du formulaire lorsqu'il est déjà en production (pour éviter des données incohérentes)\n\n**💡 En cas de besoin de modifications majeures :**\n👉 Dupliquez l'opération, ajustez les paramètres, puis activez une nouvelle version.",
+      "tags": ["modification", "activation", "limitation", "édition", "restriction"],
+      "order": 5,
+      "createdAt": "2025-01-18T14:30:00Z",
+      "updatedAt": "2025-01-25T10:15:00Z"
+    },
+    {
+      "id": 6,
+      "groupId": 1,
+      "question": "Comment mettre en pause, réactiver ou supprimer une opération ?",
+      "answer": "**🗑️ Supprimer une opération**\n- Possible uniquement pour les opérations au statut **Brouillon**\n- Actions :\n  - Depuis la liste des opérations (menu \"...\" > Supprimer)\n  - Ou depuis le détail de l'opération > menu d'actions\n\n**⏸️ Mettre en pause une opération active**\n- Depuis le détail de l'opération : bouton **\"Mettre en pause\"**\n- Les joueurs verront alors l'**écran de pause personnalisé** (configuré dans Édition des écrans)\n- Utile en cas de :\n  - Détection de comportements frauduleux\n  - Problème technique à corriger\n  - Ajustement nécessaire sur les lots\n  - Demande du client\n\n**▶️ Réactiver une opération en pause**\n- Même endroit : bouton **\"Réactiver\"**\n- Le jeu reprend, les participants peuvent à nouveau jouer\n\n**💡 Astuce :** La mise en pause est réversible, contrairement à la suppression qui est définitive.",
+      "tags": ["pause", "suppression", "réactivation", "gestion", "suspension"],
+      "order": 6,
+      "createdAt": "2025-01-19T16:00:00Z",
+      "updatedAt": "2025-01-19T16:00:00Z"
+    },
+    {
+      "id": 7,
+      "groupId": 1,
+      "question": "Comment dupliquer une opération existante ?",
+      "answer": "La duplication vous permet de réutiliser une configuration complète sans repartir de zéro.\n\n**📋 Étapes :**\n1. Allez dans **Opérations**\n2. Sur la ligne de l'opération à dupliquer, cliquez sur les **trois points \"...\"**\n3. Sélectionnez **\"Dupliquer\"**\n\n**La nouvelle opération :**\n- Est créée en **brouillon**\n- **Reprend** : type de jeu, configuration, visuels, écrans, formulaire, lots, paramètres, etc.\n- **Ne reprend pas** : statistiques, participations, données utilisateurs\n\n**⚠️ Pensez à modifier au minimum :**\n- Le **nom** de l'opération\n- Les **dates**\n- Le **règlement**\n\n**💡 Astuce :** La duplication est idéale pour créer des campagnes récurrentes (ex : jeux mensuels) ou pour corriger une opération activée avec des erreurs.",
+      "tags": ["duplication", "copie", "réutilisation", "campagne récurrente"],
+      "order": 7,
+      "createdAt": "2025-01-20T09:30:00Z",
+      "updatedAt": "2025-01-20T09:30:00Z"
+    },
+    {
+      "id": 8,
+      "groupId": 2,
+      "question": "Le règlement de jeu est-il obligatoire ?",
+      "answer": "**Oui.** Un règlement est **obligatoire** pour tout jeu concours. Sans règlement, l'opération ne peut pas être activée dans Data Game.\n\n**📜 Le règlement :**\n- Définit les **conditions de participation** (avec ou sans obligation d'achat)\n- Précise les **dotations, valeurs et modalités de gain**\n- Encadre la **désignation des gagnants** et le traitement des litiges\n- **Protège l'organisateur** juridiquement\n\n**⚖️ Cadre légal :**\n- Obligatoire pour les jeux avec obligation d'achat\n- Recommandé pour les dotations importantes (>5000€)\n- Conseillé pour les grandes marques\n\n**💡 Astuce :** Data Game propose des modèles de règlement prêts à l'emploi que vous pouvez personnaliser.",
+      "tags": ["règlement", "obligatoire", "légal", "conformité", "loi"],
+      "order": 1,
+      "createdAt": "2025-01-21T13:15:00Z",
+      "updatedAt": "2025-01-28T11:40:00Z"
+    },
+    {
+      "id": 9,
+      "groupId": 2,
+      "question": "Comment générer un règlement automatiquement ?",
+      "answer": "**📝 Étapes pour générer un règlement :**\n\n**1.** Dans votre opération, allez dans l'onglet **\"Gestion du règlement\"**\n\n**2.** Choisissez un **modèle adapté** :\n- Instants gagnants (IG)\n- IG + Tirage au sort (TAS)\n- Avec ou sans obligation d'achat\n\n**3.** Pour chaque bloc du règlement, personnalisez les **zones à renseigner** (surlignées ou encadrées) :\n- Société organisatrice\n- Produits concernés\n- Modalités de participation\n- Description des lots\n- Dates, lieux, etc.\n\n**4.** Enregistrez puis cliquez sur **\"Générer le PDF\"**\n\n**5.** Téléchargez le règlement pour archivage ou dépôt chez huissier\n\n**💡 Astuce :** Tant que l'opération n'est pas activée, vous pouvez rouvrir le règlement, ajuster les champs et **regénérer le PDF**.\n\n**⚠️ Important :** Le modèle prédéfini contient des shortcodes automatiques (dates, nom de l'opération, etc.) pour vous faire gagner du temps.",
+      "tags": ["règlement", "génération", "pdf", "modèle", "automatique"],
+      "order": 2,
+      "createdAt": "2025-01-22T10:20:00Z",
+      "updatedAt": "2025-01-22T10:20:00Z"
+    },
+    {
+      "id": 10,
+      "groupId": 2,
+      "question": "Puis-je importer un règlement existant ?",
+      "answer": "**Oui.** Si vous disposez déjà d'un règlement (rédigé par votre service juridique, une agence, ou un précédent modèle), vous pouvez simplement l'importer.\n\n**📤 Étapes :**\n1. Onglet **\"Gestion du règlement\"**\n2. Bouton **\"Téléverser un fichier\"** ou équivalent\n3. Importer votre fichier **PDF** finalisé et conforme\n\n**⚠️ Conditions :**\n- Format accepté : **PDF uniquement**\n- Assurez-vous que le règlement est conforme à la législation française\n- Vérifiez la cohérence avec votre opération Data Game\n\n**💡 Astuce :** Si vous importez un PDF, vous ne pourrez pas le modifier directement dans Data Game. Modifiez-le en externe si besoin avant l'import.",
+      "tags": ["règlement", "import", "pdf", "téléversement", "juridique"],
+      "order": 3,
+      "createdAt": "2025-01-23T08:45:00Z",
+      "updatedAt": "2025-01-23T08:45:00Z"
+    },
+    {
+      "id": 11,
+      "groupId": 2,
+      "question": "Peut-on modifier le règlement après activation ?",
+      "answer": "**Non.** Une fois l'opération activée, le règlement devient **figé** pour garantir l'intégrité légale du jeu.\n\n**🔒 Pourquoi cette restriction ?**\n- Protection juridique de l'organisateur\n- Garantie d'équité pour tous les participants\n- Conformité légale\n\n**💡 Si vous devez corriger ou modifier des règles :**\n1. Mettez l'opération actuelle en **pause** si nécessaire\n2. **Dupliquez** l'opération\n3. Créez un **nouveau règlement**\n4. **Activez** cette nouvelle version\n\n**⚠️ Important :** Prévoyez suffisamment de temps pour la relecture du règlement avant activation.",
+      "tags": ["règlement", "modification", "figé", "activation", "duplication"],
+      "order": 4,
+      "createdAt": "2025-01-24T11:30:00Z",
+      "updatedAt": "2025-01-24T11:30:00Z"
+    },
+    {
+      "id": 12,
+      "groupId": 3,
+      "question": "Comment ajouter et configurer des lots ?",
+      "answer": "La configuration des lots dépend directement de la **mécanique de jeu** choisie lors de la création de l'opération. Chaque mécanique répond à une logique différente de désignation des gagnants.\n\n**1️⃣ Lots pour une mécanique Instants gagnants**\n\nLa mécanique Instants gagnants permet de définir à l'avance les moments où un participant gagne automatiquement un lot.\n\n**Étapes de configuration :**\n1. Accédez à votre opération, onglet **Gestion des lots**\n2. Cliquez sur **Ajouter un lot – Instant gagnant**\n3. Renseignez les informations du lot :\n   - Visuel du lot\n   - Nom du lot\n   - Description (utilisée dans le règlement)\n   - Valeur commerciale TTC\n   - Quantité disponible\n4. Configurez la distribution du lot :\n   - Définition des **périodes gagnantes**\n   - Paramétrage des **chances de gain** (en %)\n\n👉 Chaque participation jouée pendant une période gagnante peut donner lieu à un gain, selon la probabilité définie.\n\n**Bon à savoir :**\n- Les périodes gagnantes peuvent être générées automatiquement\n- Les chances de gain peuvent être ajustées même après l'activation\n- Les lots non gagnés peuvent être redistribués selon vos paramètres\n\n**2️⃣ Lots pour une mécanique Codes gagnants**\n\nLa mécanique Codes gagnants repose sur la saisie ou l'attribution de codes uniques permettant de remporter un lot.\n\n**Étapes de configuration :**\n1. Dans l'onglet Gestion des lots, cliquez sur **Ajouter un lot – Code gagnant**\n2. Renseignez : Visuel, Nom, Description, Valeur commerciale TTC\n3. Importez ou générez les codes gagnants (Import via CSV ou Génération automatique)\n4. Associez le lot au lot de codes\n\n👉 Un participant gagne lorsqu'il saisit (ou se voit attribuer) un code valide et non utilisé.\n\n**Bon à savoir :**\n- Chaque code ne peut être utilisé qu'une seule fois\n- Le stock de lots est directement lié au nombre de codes valides\n- Les codes peuvent être diffusés sur différents supports (packaging, email, SMS, print…)\n\n**3️⃣ Lots pour une mécanique Tirage au sort**\n\nLa mécanique Tirage au sort permet de désigner un ou plusieurs gagnants parmi l'ensemble des participants, à la fin de l'opération.\n\n**Étapes de configuration :**\n1. Dans l'onglet Gestion des lots, cliquez sur **Ajouter un lot – Tirage au sort**\n2. Renseignez : Visuel, Nom, Description, Valeur commerciale TTC, Nombre de gagnants\n3. Activez (si nécessaire) le module Tirage au sort automatique\n\n👉 Les gagnants ne sont pas désignés immédiatement : la sélection se fait après la fin de l'opération.\n\n**À la clôture du jeu :**\n- La plateforme déduplique automatiquement les participations\n- Un bouton \"Lancer le tirage au sort\" permet de désigner les gagnants en un clic\n- Les résultats sont tracés et consultables dans l'opération\n\n**💡 Bonnes pratiques (toutes mécaniques) :**\n- Renseignez toujours la **valeur commerciale TTC** (obligatoire pour le règlement)\n- Utilisez des **visuels attractifs** pour renforcer l'engagement\n- Vérifiez la **cohérence** entre les lots, le règlement et les écrans de gain",
+      "tags": ["lots", "configuration", "instants gagnants", "codes gagnants", "tirage au sort", "dotation"],
+      "order": 1,
+      "createdAt": "2025-01-25T15:00:00Z",
+      "updatedAt": "2025-02-02T09:30:00Z"
+    },
+    {
+      "id": 13,
+      "groupId": 3,
+      "question": "Comment gérer les chances de gain et les périodes gagnantes ?",
+      "answer": "**🎲 Chances de gain (instants gagnants)**\n\nPour chaque lot IG :\n1. Ouvrez la fiche du lot\n2. Activez la gestion des **chances de gain** (curseur)\n3. Choisissez un pourcentage (ex : 60%)\n   - **100%** = toute participation pendant une période gagnante fait gagner\n   - **Valeur plus faible** = distribution plus progressive, moins de gagnants\n\n**⏰ Périodes gagnantes**\n\nDéfinissez :\n- Une **plage horaire** (ex : 11h–17h)\n- La **durée** de chaque période (ex : 5 minutes)\n- Le **nombre de périodes** par jour (ex : 20)\n\n**🤖 Génération automatique :**\n1. Activez la coche \"Périodes automatiques\"\n2. Renseignez les paramètres\n3. Cliquez sur **\"Générer automatiquement\"**\n4. Visualisez et ajustez les périodes dans le calendrier\n\n**💡 Astuce :** Vous pouvez **modifier ces paramètres en cours d'opération**, par exemple si les lots partent trop vite ou au contraire pas assez.",
+      "tags": ["chances de gain", "périodes gagnantes", "instants gagnants", "probabilité", "distribution"],
+      "order": 2,
+      "createdAt": "2025-01-26T10:15:00Z",
+      "updatedAt": "2025-01-26T10:15:00Z"
+    },
+    {
+      "id": 14,
+      "groupId": 3,
+      "question": "Comment fonctionne le tirage au sort automatique ?",
+      "answer": "Le tirage au sort (TAS) est disponible selon votre abonnement / modules.\n\n**🎰 Configuration :**\n\n**1.** Ajoutez un **lot TAS** dans Gestion des lots :\n- Visuel\n- Nom\n- Valeur\n- Nombre de gagnants\n\n**2.** Activez l'option **\"Tirage au sort automatique\"**\n\n**3.** Une fois l'opération **terminée**, un bouton **\"Lancer le tirage au sort\"** apparaît\n\n**4.** En un clic, la plateforme sélectionne automatiquement les gagnants, en **dédoublonnant les participations**\n\n**📋 Résultat :**\nUn écran dédié affiche :\n- Le ou les **gagnants**\n- Leurs **coordonnées** de contact (email...)\n\n**💡 Astuce :** Le TAS est idéal pour les gros lots (voyages, voitures, etc.) qui créent de l'engagement sur toute la durée de l'opération.",
+      "tags": ["tirage au sort", "gagnants", "automatique", "dédoublonnage", "sélection"],
+      "order": 3,
+      "createdAt": "2025-01-27T14:20:00Z",
+      "updatedAt": "2025-01-30T16:45:00Z"
+    },
+    {
+      "id": 15,
+      "groupId": 3,
+      "question": "Comment gérer la validation des gagnants (preuve d'achat) ?",
+      "answer": "Lorsqu'une **preuve d'achat** est exigée, vous devez valider manuellement les gagnants.\n\n**✅ Processus de validation :**\n\n**1.** Allez dans l'onglet **\"Listing des participations\"**\n\n**2.** Filtrez par statut **\"Gagné\"**\n\n**3.** Ouvrez la **fiche du participant**\n\n**4.** Vérifiez la **preuve d'achat** (ticket, facture...)\n\n**5.** Choisissez :\n- ✅ **Valider** la participation\n- ❌ **Invalider** : le lot est automatiquement **remis en jeu**\n\n**⚠️ Critères de validation :**\n- Preuve d'achat lisible et authentique\n- Date d'achat conforme à la période du jeu\n- Produit concerné par l'opération\n\n**💡 Astuce :** Vérifiez régulièrement les preuves d'achat pour les gros lots afin de remettre en jeu rapidement si nécessaire.",
+      "tags": ["validation", "gagnants", "preuve d'achat", "vérification", "ticket"],
+      "order": 4,
+      "createdAt": "2025-01-28T09:50:00Z",
+      "updatedAt": "2025-01-28T09:50:00Z"
+    },
+    {
+      "id": 16,
+      "groupId": 4,
+      "question": "Quels écrans du jeu puis-je personnaliser ?",
+      "answer": "Chaque opération comporte plusieurs écrans **entièrement personnalisables** :\n\n**🖥️ Liste des écrans :**\n- **Écran d'accueil** : première impression du joueur\n- **Écran d'inscription** (formulaire) : collecte des données\n- **Écran de jeu** : roue, carte à gratter, bandit manchot, clic & win...\n- **Écran de gain** : félicitations et présentation du lot\n- **Écran de perte** : message d'encouragement\n- **Écran de validation de gain** : coordonnées du gagnant\n- **Écran de preuve d'achat** (si option active)\n- **Écran de fin / remerciement**\n- **Écran de pause** (si l'opération est suspendue)\n\n**✏️ Sur chacun, vous pouvez adapter :**\n- **Textes** (titres, accroches, CTA)\n- **Images et visuels**\n- **Boutons de redirection**\n- Certains **paramètres** (compte à rebours, carrousel, etc.)\n\n**💡 Astuce :** Utilisez la prévisualisation après chaque modification pour vérifier le rendu.",
+      "tags": ["écrans", "personnalisation", "visuels", "design", "interface"],
+      "order": 1,
+      "createdAt": "2025-01-29T11:25:00Z",
+      "updatedAt": "2025-02-03T13:10:00Z"
+    },
+    {
+      "id": 17,
+      "groupId": 4,
+      "question": "Comment personnaliser le formulaire de participation ?",
+      "answer": "Dans l'onglet **\"Édition des écrans\"**, sur l'écran Inscription :\n\n**📧 Champ obligatoire :**\nLe champ **Email** est obligatoire et imposé par la plateforme.\n\n**➕ Champs disponibles :**\n- Prénom / Nom\n- Date de naissance\n- Téléphone\n- Adresse postale\n- Liste déroulante (ex : point de vente)\n- Cases à cocher (Opt-in newsletter, RGPD, etc.)\n- Champs libres (code magasin, commentaire...)\n\n**📊 Champs liés aux statistiques :**\nLes champs suivants alimenteront les graphiques :\n- Civilité\n- Date de naissance\n- Points de vente\n- Liste déroulante personnalisée\n- Case Opt'in\n\n**⚠️ RGPD :** Ne collectez que les informations **vraiment nécessaires** à votre opération.\n\n**💡 Astuce :** Un formulaire trop long décourage les participations. Limitez-vous à l'essentiel !",
+      "tags": ["formulaire", "champs", "inscription", "données", "rgpd", "opt-in"],
+      "order": 2,
+      "createdAt": "2025-01-30T15:40:00Z",
+      "updatedAt": "2025-01-30T15:40:00Z"
+    },
+    {
+      "id": 18,
+      "groupId": 4,
+      "question": "Peut-on demander plus d'infos uniquement aux gagnants ?",
+      "answer": "**Oui.** L'écran **\"Validation de gain\"** dispose de son propre formulaire.\n\n**📋 Champs conseillés :**\n- Nom / Prénom\n- Adresse complète\n- Code postal, Ville, Pays\n- Téléphone\n- Email de confirmation\n- Toute autre information utile à la **livraison du lot**\n\n**⚠️ Important :**\nCes informations **ne sont pas utilisées dans les statistiques**, car elles interviennent après la participation.\n\n**💡 Astuce :** Ces données sont essentielles pour l'envoi des lots. Assurez-vous de demander toutes les informations nécessaires à la livraison.",
+      "tags": ["gagnants", "formulaire", "validation", "adresse", "livraison", "coordonnées"],
+      "order": 3,
+      "createdAt": "2025-01-31T10:30:00Z",
+      "updatedAt": "2025-02-04T14:20:00Z"
+    },
+    {
+      "id": 19,
+      "groupId": 4,
+      "question": "Peut-on rediriger un joueur après la partie (gagnant ou perdant) ?",
+      "answer": "**Oui**, sur les écrans de perte, de fin ou de pause, vous pouvez :\n\n**🔗 Configuration :**\n- Activer un **bouton de redirection**\n- Indiquer une **URL personnalisée** (site de la marque, page produit, offre spéciale, etc.)\n\n**📈 C'est un excellent levier pour :**\n- **Générer du trafic** vers votre site\n- **Pousser une promotion** spécifique\n- **Emmener le joueur** vers une autre étape de votre tunnel marketing\n- Proposer une **offre de consolation** aux perdants\n\n**💡 Astuce :** Personnalisez le message du bouton pour inciter au clic (ex : \"Découvrir nos offres\", \"Profiter de -20%\", etc.)",
+      "tags": ["redirection", "url", "trafic", "promotion", "consolation", "marketing"],
+      "order": 4,
+      "createdAt": "2025-02-01T08:15:00Z",
+      "updatedAt": "2025-02-01T08:15:00Z"
+    },
+    {
+      "id": 20,
+      "groupId": 5,
+      "question": "Comment récupérer l'URL et le QR Code de mon opération ?",
+      "answer": "Une fois l'opération **activée** :\n\n**🔗 Sur la fiche de l'opération, vous voyez :**\n- L'**URL du jeu** (copier / coller pour diffusion via newsletter, réseaux sociaux, SMS...)\n- Un bouton ou icône **\"Voir le QR Code\"**\n\n**📱 En cliquant sur le QR Code, vous pouvez :**\n- Le **télécharger** (PNG/JPG)\n- L'intégrer sur vos **affiches, PLV, flyers, packagings, supports digitaux...**\n\n**✅ Le QR Code redirige vers une page responsive**, utilisable sur smartphone comme sur desktop.\n\n**💡 Astuce :** Testez toujours le QR Code avant impression pour vérifier qu'il pointe vers la bonne URL.",
+      "tags": ["qr code", "url", "diffusion", "téléchargement", "lien", "partage"],
+      "order": 1,
+      "createdAt": "2025-02-01T12:00:00Z",
+      "updatedAt": "2025-02-01T12:00:00Z"
+    },
+    {
+      "id": 21,
+      "groupId": 5,
+      "question": "Où puis-je diffuser mon jeu concours ?",
+      "answer": "**📢 Exemples de supports de diffusion :**\n\n**🏪 En point de vente :**\n- Affiches vitrines, PLV magasin, stops-rayons\n- Flyers, leaflets, tickets de caisse\n- Packagings produits (étiquettes, encarts, sleeves...)\n\n**💻 En digital :**\n- Emails marketing & newsletters\n- Posts / stories sur réseaux sociaux\n- Campagnes d'influence, UGC\n- Site web (lien direct ou iframe)\n- Campagnes publicitaires (Google Ads, Facebook Ads...)\n\n**📱 Multi-canal :**\n- SMS marketing\n- QR Code sur supports physiques et digitaux\n\n**💡 Astuce :** Plus vos **points de contact sont variés**, plus votre volume de participation augmente. Combinez physique et digital pour maximiser la portée !",
+      "tags": ["diffusion", "canaux", "marketing", "plv", "digital", "réseaux sociaux"],
+      "order": 2,
+      "createdAt": "2025-02-02T09:45:00Z",
+      "updatedAt": "2025-02-02T09:45:00Z"
+    },
+    {
+      "id": 22,
+      "groupId": 6,
+      "question": "Comment consulter et filtrer les participations ?",
+      "answer": "Dans l'onglet **\"Listing des participations\"** d'une opération :\n\n**📋 Vous voyez :**\n- La **liste complète** de toutes les participations\n\n**🔍 Filtres disponibles :**\n- **Statut** : gagné / perdu\n- **Validé / invalide**\n- **Opt-in** : participants ayant accepté les communications\n- **Lot gagné** : filtrer par type de lot\n- **Champs personnalisés** : point de vente, ville, etc.\n\n**👤 Fiche détaillée :**\nVous pouvez ouvrir la fiche d'un participant pour voir :\n- Les **réponses au formulaire**\n- La **preuve d'achat** (si activée)\n- Le **statut** de sa participation\n- **Date et heure** de participation\n\n**💡 Astuce :** Utilisez les filtres pour identifier rapidement les gagnants à valider ou les participations suspectes.",
+      "tags": ["participations", "filtres", "listing", "gagnants", "consultation", "données"],
+      "order": 1,
+      "createdAt": "2025-02-02T14:30:00Z",
+      "updatedAt": "2025-02-02T14:30:00Z"
+    },
+    {
+      "id": 23,
+      "groupId": 6,
+      "question": "Comment exporter les données participants ?",
+      "answer": "Toujours depuis l'onglet **\"Listing des participations\"** :\n\n**📤 Étapes d'export :**\n1. Appliquez les **filtres souhaités** (ex : seulement les gagnants, ou seulement les opt-in)\n2. Cliquez sur **\"Exporter\"**\n3. Un fichier **.CSV** est généré, compatible avec Excel, Google Sheets, ou votre CRM\n\n**📊 Options d'export :**\n- Exporter **tous** les participants\n- Exporter seulement une **sélection filtrée**\n- Exporter le détail d'un **seul participant**\n\n**⏱️ RGPD :**\nLes données sont **anonymisées automatiquement** au bout de 6 mois.\n\n**💡 Astuce :** Exportez régulièrement vos données pour conserver un historique, sachant qu'elles sont anonymisées après 6 mois.",
+      "tags": ["export", "csv", "données", "participants", "crm", "rgpd"],
+      "order": 2,
+      "createdAt": "2025-02-03T08:20:00Z",
+      "updatedAt": "2025-02-03T08:20:00Z"
+    },
+    {
+      "id": 24,
+      "groupId": 6,
+      "question": "Où trouver les statistiques de mon opération ?",
+      "answer": "Dans le détail d'une opération, l'onglet **\"Statistiques\"** donne accès à :\n\n**📈 Données principales :**\n- **Visites** de la page jeu\n- **Nombre de participations**\n- **Taux de conversion** (visites → participations)\n- Nombre de **gagnants** et de **perdants**\n\n**📊 Analyses détaillées :**\n- Répartition par **canal de diffusion** (QR, lien web, email, social...)\n- Suivi des **lots gagnés / restants**\n- Statistiques liées aux **champs du formulaire** (âge, sexe, zones, points de vente...)\n\n**🔍 Filtres :**\nVous pouvez filtrer par **période** :\n- Aujourd'hui\n- Cette semaine\n- Ce mois\n- Période personnalisée\n\n**💡 Astuce :** Filtrez par jour pour identifier les pics de participation et optimiser vos actions de communication.",
+      "tags": ["statistiques", "analyses", "visites", "conversion", "kpi", "performance"],
+      "order": 3,
+      "createdAt": "2025-02-03T11:00:00Z",
+      "updatedAt": "2025-02-03T11:00:00Z"
+    },
+    {
+      "id": 25,
+      "groupId": 6,
+      "question": "Puis-je avoir une vue globale de toutes mes opérations ?",
+      "answer": "**Oui.** Via la rubrique **\"Statistiques globales\"** (accessibles depuis le tableau de bord ou le menu Statistiques) :\n\n**🔍 Filtrez par :**\n- Date\n- Client / Marque\n- Type de jeu\n- Utilisateur...\n\n**📊 Visualisez :**\n- Nombre total d'**opérations**\n- Nombre global de **participants**\n- **Tendances** de participation dans le temps\n- Classement des **campagnes les plus performantes**\n\n**📋 Utilisation :**\nCette vue est idéale pour vos :\n- **Bilans annuels**\n- **Reportings internes**\n- **Présentations clients**\n\n**💡 Astuce :** Utilisez les filtres pour comparer les performances de différentes périodes ou types d'opérations.",
+      "tags": ["statistiques globales", "vue d'ensemble", "reporting", "bilan", "tendances"],
+      "order": 4,
+      "createdAt": "2025-02-03T15:45:00Z",
+      "updatedAt": "2025-02-03T15:45:00Z"
+    },
+    {
+      "id": 26,
+      "groupId": 5,
+      "question": "Quels KPIs suivre pour juger de l'efficacité d'un jeu ?",
+      "answer": "**📊 Les indicateurs clés à suivre :**\n\n**👥 Acquisition :**\n- **Visites vs participations** → mesure l'efficacité de vos canaux d'acquisition\n- **Taux de conversion** → participants / visites\n\n**📱 Comportement :**\n- **Répartition mobile / desktop** → pour adapter vos supports de diffusion\n- **Origine du trafic** → QR Code, email, réseaux sociaux, site web...\n\n**🎁 Performance :**\n- **Taux de transformation en gagnant** → pour équilibrer l'attractivité de vos dotations\n- **Lots distribués vs lots restants**\n\n**📈 Engagement :**\n- **Taux d'opt-in** → qualité de la base collectée\n- **Temps passé sur le jeu**\n\n**💡 Astuce :** Comparez ces KPIs entre plusieurs opérations pour identifier les mécaniques et canaux les plus performants.",
+      "tags": ["kpi", "performance", "conversion", "efficacité", "taux", "analyse"],
+      "order": 3,
+      "createdAt": "2025-02-04T09:00:00Z",
+      "updatedAt": "2025-02-04T09:00:00Z"
+    },
+    {
+      "id": 27,
+      "groupId": 5,
+      "question": "Comment améliorer le taux de participation ?",
+      "answer": "**📈 Quelques leviers simples :**\n\n**📝 Formulaire :**\n- **Simplifier** le formulaire d'inscription (limiter le nombre de champs)\n- Ne demander que l'**essentiel** (email + 2-3 champs max)\n\n**🎁 Lots :**\n- **Mettre en avant les lots** (visuels attractifs + valeur visible)\n- Proposer des **lots désirables** et en adéquation avec votre cible\n\n**⏰ Urgence :**\n- Ajouter un **compte à rebours** sur l'écran d'accueil\n- Communiquer sur la **durée limitée** de l'opération\n\n**📢 Diffusion :**\n- **Multiplier les points de diffusion** (PLV, QR sur pack, newsletter, réseaux sociaux)\n- Relancer en **milieu et fin de campagne**\n\n**🎮 Mécanique :**\n- Adapter les mécaniques de jeu : **roue, grattage, clic & win** pour des expériences rapides et ludiques\n\n**💡 Astuce :** Analysez les statistiques de vos premières heures de jeu pour ajuster rapidement si nécessaire.",
+      "tags": ["optimisation", "participation", "conversion", "engagement", "amélioration"],
+      "order": 4,
+      "createdAt": "2025-02-04T13:30:00Z",
+      "updatedAt": "2025-02-04T13:30:00Z"
+    },
+    {
+      "id": 28,
+      "groupId": 7,
+      "question": "À quoi sert la liste \"Clients & Partenaires\" ?",
+      "answer": "Cette rubrique permet de gérer vos **clients finaux** (marques, enseignes, distributeurs) lorsque vous utilisez Data Game pour plusieurs marques ou réseaux.\n\n**📋 Elle permet de :**\n- **Rattacher** chaque opération à un client spécifique\n- **Centraliser** les campagnes d'une marque\n- Gérer la **charte graphique** et les visuels\n- Suivre les **statistiques par client** et éventuellement par point de vente\n\n**📍 Localisation :**\nAccessible depuis la rubrique **\"Listes\" > \"Clients & Partenaires\"**\n\n**📊 Informations affichées :**\n- Type (client, partenaire, agence...)\n- Nom des utilisateurs qui les ont ajoutés\n- Logo de l'entreprise\n- Nombre d'opérations associées\n- Points de vente (si activés)\n\n**💡 Astuce :** Renseignez bien les informations de vos clients, elles seront automatiquement utilisées dans les règlements.",
+      "tags": ["clients", "partenaires", "marques", "gestion", "organisation"],
+      "order": 1,
+      "createdAt": "2025-02-04T16:00:00Z",
+      "updatedAt": "2025-02-04T16:00:00Z"
+    },
+    {
+      "id": 29,
+      "groupId": 7,
+      "question": "Comment ajouter un client et ses points de vente ?",
+      "answer": "**➕ Ajouter un client :**\n\n**1.** Allez dans **Listes > Clients & Partenaires**\n\n**2.** Cliquez sur **\"Ajouter un client\"**\n\n**3.** Renseignez :\n- **Nom** du client\n- **Logo**\n- **Couleur principale** (avec code hexadécimal possible)\n- **Informations légales** (raison sociale, SIRET...)\n- **Adresse** complète\n- **Coordonnées** utilisées dans les règlements\n\n**4.** Enregistrez : le client est disponible dans la liste déroulante lors de la création d'une opération\n\n**🏪 Points de vente :**\n\n**1.** Depuis la fiche du client, cliquez sur **\"Gérer les points de vente\"**\n\n**2.** Téléchargez le **gabarit CSV** proposé\n\n**3.** Complétez-le avec : nom du PDV, adresse, code magasin, etc.\n\n**4.** Importez le fichier pour créer la liste complète\n\n**📊 Utilisation :**\n- Dans les **formulaires d'inscription** (liste déroulante)\n- Dans les **statistiques cartographiques**\n\n**💡 Astuce :** L'import en masse est recommandé si vous avez beaucoup de points de vente.",
+      "tags": ["clients", "points de vente", "ajout", "import", "csv", "pdv"],
+      "order": 2,
+      "createdAt": "2025-02-05T08:30:00Z",
+      "updatedAt": "2025-02-05T08:30:00Z"
+    },
+    {
+      "id": 30,
+      "groupId": 8,
+      "question": "Quels sont les rôles disponibles sur Data Game et leurs droits ?",
+      "answer": "Il existe **3 principaux rôles** :\n\n**👑 Administrateur (Admin Data / Administrateur)**\n- Accès à **tous les comptes, utilisateurs, opérations et statistiques**\n- Peut **créer / modifier / supprimer** tout (y compris comptes et utilisateurs)\n\n**👔 Manageur**\n- **Crée et gère** : opérations, comptes, utilisateurs (manageurs & éditeurs), clients & partenaires\n- **Voit** : toutes les opérations et statistiques de son organisation\n- **Peut supprimer** : opérations en brouillon, certains utilisateurs, certains comptes\n\n**✏️ Éditeur**\n- **Peut créer / modifier** : ses propres opérations et certains clients/partenaires\n- **Voit uniquement** :\n  - Les opérations qu'il a créées\n  - Les statistiques de ses opérations\n  - Les clients/partenaires qu'il a ajoutés\n- **Peut supprimer** : seulement ses brouillons et ses propres clients/partenaires\n\n**💡 Astuce :** Limitez le nombre d'utilisateurs avec accès gestionnaire pour garder le contrôle sur les paramètres sensibles.",
+      "tags": ["rôles", "droits", "permissions", "utilisateurs", "accès", "gestion"],
+      "order": 1,
+      "createdAt": "2025-02-05T10:15:00Z",
+      "updatedAt": "2025-02-05T10:15:00Z"
+    },
+    {
+      "id": 31,
+      "groupId": 8,
+      "question": "Comment inviter un nouvel utilisateur sur le compte ?",
+      "answer": "**✉️ Inviter un utilisateur :**\n\n**1.** Allez dans **Listes > Utilisateurs**\n\n**2.** Cliquez sur **\"Inviter un utilisateur\"**\n\n**3.** Saisissez son **email** et choisissez son **rôle** (éditeur ou manageur)\n\n**4.** L'utilisateur reçoit un **email d'invitation** pour créer son mot de passe et activer son compte\n\n**👥 Utilisateurs inclus :**\nLe nombre d'utilisateurs inclus dépend de votre formule d'abonnement :\n- **1 Manageur** (propriétaire du compte)\n- **Jusqu'à 4 Éditeurs** maximum\n\n**💰 Utilisateurs supplémentaires :**\n⚠️ Chaque nouvel utilisateur au-delà du quota sera ajouté au montant mensuel de l'abonnement.\n\n**💡 Astuce :** Vérifiez que l'email est correct avant l'envoi pour éviter que l'invitation n'arrive chez la mauvaise personne.",
+      "tags": ["invitation", "utilisateurs", "email", "rôles", "ajout"],
+      "order": 2,
+      "createdAt": "2025-02-05T13:00:00Z",
+      "updatedAt": "2025-02-05T13:00:00Z"
+    },
+    {
+      "id": 32,
+      "groupId": 9,
+      "question": "Quels sont les abonnements disponibles et que comprennent-ils ?",
+      "answer": "**📦 Offres disponibles :**\n\n**🆓 Démo gratuite 7 jours**\n- Avec des **données de test**\n- Permet de découvrir l'interface, créer des jeux, tester les mécaniques\n\n**⭐ Abonnement Data One**\n- **50 € / mois** ou **500 € / an** (avec remise de 100 € sur l'année)\n\n**👥 Utilisateurs inclus :**\n- 1 utilisateur **Manageur** (propriétaire du compte)\n- Jusqu'à 4 utilisateurs **Éditeur** maximum\n\n**📋 Modules inclus :**\n- Génération de **QR Code**\n- **Statistiques**\n- Suivi des **lots gagnés**\n- **Tirage au sort** automatisé\n- **Export de données**\n- Listing de **points de vente** pour un client\n\n**🎮 Opérations :**\n- **Illimitées** (durée max de 2 semaines chacune, 20 000 visites max par opération)\n\n**📍 Localisation :**\nAccessible depuis **Compte > Abonnement**",
+      "tags": ["abonnement", "prix", "formule", "offres", "data one", "demo"],
+      "order": 1,
+      "createdAt": "2025-02-05T15:30:00Z",
+      "updatedAt": "2025-02-05T15:30:00Z"
+    },
+    {
+      "id": 33,
+      "groupId": 9,
+      "question": "Quels modules additionnels puis-je activer ?",
+      "answer": "**🔧 Modules payants à la carte :**\n\n**🔗 Intégration \"Outils tiers (Add-Ons)\"**\n- Connexions via API (Latenode / n8n, Monday, Slack, etc.)\n- Synchroniser les leads avec votre CRM\n- Automatiser certains exports ou envois de rapports\n\n**📱 Double authentification par SMS**\n- +2 €/mois, avec un volume de SMS inclus\n- Sécurité renforcée pour l'accès au compte\n\n**📧 Modules de diffusion**\n- Campagnes email / SMS\n- Crédits consommés selon le volume d'envoi\n\n**🆕 Autres modules à venir**\n- +5 €/mois ou +2 €/mois selon le cas\n\n**📍 Gestion :**\nCes modules sont gérés dans **Compte > Abonnement > Modules**\n\n**💡 Astuce :** N'activez que les modules dont vous avez réellement besoin pour optimiser vos coûts.",
+      "tags": ["modules", "options", "add-ons", "intégrations", "api"],
+      "order": 2,
+      "createdAt": "2025-02-05T16:45:00Z",
+      "updatedAt": "2025-02-05T16:45:00Z"
+    },
+    {
+      "id": 34,
+      "groupId": 10,
+      "question": "À quoi servent les crédits \"Data Coins\" ?",
+      "answer": "Les **Data Coins** sont la monnaie interne de la plateforme.\n\n**💰 Utilisation principale :**\n- **Activer des opérations**\n\n**🛒 Options payantes en crédits :**\n- Jours supplémentaires d'opération\n- Jeux avec **obligation d'achat**\n- Jeux avec **tirage au sort**\n- **Dépôt de règlement** chez huissier (200 crédits)\n- Génération de rapports\n- Campagnes d'email / SMS\n\n**📊 Valeur indicative :**\n1 crédit ≈ 1 € (selon la grille tarifaire en vigueur)\n\n**📍 Suivi :**\n- En haut de l'interface (compteur rapide)\n- Dans **Compte > Crédits** (détail complet)\n\n**💡 Astuce :** Surveillez régulièrement votre solde, surtout si vous avez plusieurs opérations actives qui consomment des crédits.",
+      "tags": ["crédits", "data coins", "monnaie", "paiement", "activation"],
+      "order": 1,
+      "createdAt": "2025-02-05T17:15:00Z",
+      "updatedAt": "2025-02-05T17:15:00Z"
+    },
+    {
+      "id": 35,
+      "groupId": 10,
+      "question": "Comment acheter des crédits Data Coins ?",
+      "answer": "**🛒 Acheter des crédits :**\n\n**1.** Allez dans **Compte > Crédits**\n\n**2.** Consultez votre solde (disponibles / réservés / utilisés)\n\n**3.** Cliquez sur **\"Acheter des crédits\"**\n\n**4.** Choisissez un **pack de crédits** :\n- 100, 250, 500, 1000, 2500, 5000...\n\n**5.** Réglez par **carte bancaire** (ou autre moyen activé)\n\n**⚡ Délai :**\nLes crédits sont généralement ajoutés **immédiatement** à votre portefeuille.\n\n**📦 Packs sur-mesure :**\nVous pouvez soumettre une demande de pack de crédits sur-mesure auprès de l'équipe Data Game pour des besoins spécifiques.\n\n**💡 Astuce :** Les packs plus importants offrent généralement un meilleur rapport qualité/prix. Anticipez vos besoins !",
+      "tags": ["achat", "crédits", "packs", "paiement", "carte bancaire"],
+      "order": 2,
+      "createdAt": "2025-02-05T18:00:00Z",
+      "updatedAt": "2025-02-05T18:00:00Z"
+    },
+    {
+      "id": 36,
+      "groupId": 10,
+      "question": "Comment suivre mes crédits restants ?",
+      "answer": "**📊 Le suivi se fait :**\n\n**⚡ Accès rapide :**\n- En haut de l'interface (compteur rapide)\n- Dans la zone \"Accès rapide\"\n\n**📋 Détail complet dans Compte > Crédits :**\n- Crédits **disponibles**\n- Crédits **réservés** (pour des brouillons déjà paramétrés)\n- Crédits **consommés** (historique)\n\n**📜 Historique des crédits :**\n- **Utilisés** : consommés par vos opérations\n- **Reçus** : bonus, offerts\n- **Gagnés** : via le programme fidélité\n- **Achetés** : packs achetés\n\n**🔔 Alertes :**\nDes notifications peuvent vous alerter en cas de seuil bas (ex : \"il ne vous reste plus que X Data Coins. Rechargez votre compte...\").\n\n**⚙️ Auto-recharge :**\nVous pouvez activer l'option de recharge automatique quand votre solde atteint un seuil défini.\n\n**💡 Astuce :** Activez les alertes de seuil minimum pour être prévenu automatiquement quand vos crédits sont bas.",
+      "tags": ["suivi", "crédits", "solde", "historique", "alertes"],
+      "order": 3,
+      "createdAt": "2025-02-05T18:30:00Z",
+      "updatedAt": "2025-02-05T18:30:00Z"
+    },
+    {
+      "id": 37,
+      "groupId": 9,
+      "question": "Où trouver mes factures et gérer mon abonnement ?",
+      "answer": "**📄 Accès à la facturation :**\n\n**1.** Allez dans **Compte > Abonnement**\n\n**2.** Onglet **Facturation** :\n- **Téléchargement** des factures PDF\n- **Historique** des paiements\n- **Mise à jour** des informations de facturation\n\n**⚙️ Vous pouvez aussi :**\n- Passer du **mensuel à l'annuel**\n- Modifier l'offre si de nouvelles formules existent\n- Gérer les **utilisateurs payants supplémentaires**\n\n**🔔 Notifications automatiques :**\n- Renouvellement réussi\n- Abonnement arrivant à échéance\n- Paiement échoué ou moyen de paiement à mettre à jour\n\n**💡 Astuce :** Consultez régulièrement votre espace facturation pour anticiper les renouvellements.",
+      "tags": ["factures", "facturation", "abonnement", "paiement", "historique"],
+      "order": 3,
+      "createdAt": "2025-02-05T19:00:00Z",
+      "updatedAt": "2025-02-05T19:00:00Z"
+    },
+    {
+      "id": 38,
+      "groupId": 9,
+      "question": "Puis-je connecter Data Game à d'autres outils (CRM, emailing, etc.) ?",
+      "answer": "**Oui**, via le module **\"Intégration Add-Ons / Outils tiers\"**.\n\n**🔗 Dans Compte > Intégration :**\n\nVous pouvez connecter Data Game à des services tiers :\n- **Latenode / n8n** (automatisation)\n- **Monday** (gestion de projet)\n- **Slack** (notifications)\n- **CRM** (synchronisation des leads)\n- Et autres...\n\n**🎯 Objectifs possibles :**\n- **Synchroniser les leads** avec votre CRM\n- **Déclencher des campagnes** emails / SMS\n- **Automatiser** certains exports ou envois de rapports\n- **Recevoir des notifications** en temps réel\n\n**📱 Réseaux sociaux :**\nVous pouvez connecter vos comptes de réseaux sociaux (Facebook, Instagram, LinkedIn...) pour diffuser vos opérations plus facilement.\n\n**📢 Publicité :**\nConnectez des plateformes publicitaires (Google Ads, Facebook Ads) pour booster la visibilité et mesurer le ROI.\n\n**💡 Astuce :** Les intégrations vous font gagner du temps en automatisant les tâches répétitives.",
+      "tags": ["intégrations", "crm", "api", "automatisation", "outils tiers", "connexions"],
+      "order": 4,
+      "createdAt": "2025-02-05T19:30:00Z",
+      "updatedAt": "2025-02-05T19:30:00Z"
+    },
+    {
+      "id": 39,
+      "groupId": 8,
+      "question": "Quelles sont les notifications envoyées par la plateforme ?",
+      "answer": "La plateforme envoie plusieurs types de notifications (succès, information, avertissement, alerte) :\n\n**🎮 Opérations :**\n- Création, duplication, publication\n- Début et fin d'une opération\n- Mise en pause / réactivation\n- Tirage au sort effectué\n- Rapport statistique généré\n\n**👥 Utilisateurs :**\n- Création d'un nouvel éditeur\n- Invitation envoyée / non validée\n- Utilisateur désactivé\n\n**💳 Abonnement / Paiement :**\n- Abonnement renouvelé\n- Moyen de paiement à mettre à jour\n- Tentative de paiement échouée\n\n**💰 Crédits & Fidélité :**\n- Alerte seuil de crédits bas\n- Achat de Data Coins\n- Conversion de points fidélité (si module actif)\n\n**🔧 Technique :**\n- Maintenance planifiée\n- Nouvelle version disponible\n- Erreur détectée\n\n**💡 Astuce :** Consultez régulièrement vos notifications pour ne rien manquer d'important !",
+      "tags": ["notifications", "alertes", "informations", "suivi", "messages"],
+      "order": 3,
+      "createdAt": "2025-02-05T20:00:00Z",
+      "updatedAt": "2025-02-05T20:00:00Z"
+    },
+    {
+      "id": 40,
+      "groupId": 6,
+      "question": "Comment générer un rapport statistique complet ?",
+      "answer": "Une fois votre opération terminée (ou en cours, si la fonctionnalité le permet) :\n\n**📊 Générer un rapport :**\n\nVous pouvez générer un **rapport PDF** regroupant :\n- Les **KPI principaux** (visites, participations, conversions...)\n- Les **répartitions par segments** (âge, sexe, zones...)\n- Les **performances par canal** (QR, email, social...)\n- Le **suivi des lots** distribués vs restants\n- Les **tendances** dans le temps\n\n**📥 Téléchargement :**\nUne notification de type **Succès** vous permet ensuite de télécharger le rapport.\n\n**📍 Localisation :**\nDepuis l'onglet **Statistiques** de votre opération.\n\n**💡 Astuce :** Ces rapports sont parfaits pour vos **présentations clients**, **bilans internes** ou **archives**.",
+      "tags": ["rapport", "pdf", "statistiques", "export", "bilan", "analyse"],
+      "order": 5,
+      "createdAt": "2025-02-05T20:30:00Z",
+      "updatedAt": "2025-02-05T20:30:00Z"
+    },
+    {
+      "id": 41,
+      "groupId": 10,
+      "question": "Qu'est-ce que le programme Data Boost ?",
+      "answer": "**🚀 DATA BOOST** est le programme de fidélité Data Game.\n\n**🎯 Il vous permet de :**\n- **Cumuler des points** (Data Points) en utilisant la plateforme\n- **Convertir** ces points en crédits Data Coins\n\n**📊 Suivi :**\n- Votre **solde de points** de fidélité Data Points\n- Votre **niveau d'avancement**\n- L'**historique** de vos points cumulés et transformés\n\n**🔄 Conversion :**\n- Vous pouvez activer la **conversion automatique** de vos points en crédits\n- Ou **transformer manuellement** vos points lorsque le seuil minimum est atteint\n\n**📍 Localisation :**\nAccessible depuis **Compte > Fidélité**\n\n**💡 Astuce :** Plus vous utilisez Data Game, plus vous cumulez de points. C'est un cercle vertueux !",
+      "tags": ["fidélité", "data boost", "points", "programme", "récompense"],
+      "order": 4,
+      "createdAt": "2025-02-05T21:00:00Z",
+      "updatedAt": "2025-02-05T21:00:00Z"
+    },
+    {
+      "id": 42,
+      "groupId": 10,
+      "question": "Qu'est-ce que le programme Data Link (parrainage) ?",
+      "answer": "**🤝 DATA LINK** est le programme de parrainage Data Game.\n\n**🎯 Il permet de :**\n- **Recommander** Data Game à vos contacts\n- **Gagner des crédits** pour chaque filleul actif\n\n**👥 Filleuls :**\n- Voyez le nombre de **filleuls actifs** rattachés à votre compte\n- Un filleul devient \"actif\" quand il crée son premier jeu\n\n**📜 Historique :**\n- Consultez l'historique de vos **parrainages**\n- Les **crédits obtenus** pour chaque parrainage\n\n**🔗 Lien de parrainage :**\n- Copiez et partagez votre **lien unique** pour inviter de nouveaux utilisateurs\n\n**📍 Localisation :**\nAccessible depuis **Compte > Fidélité**\n\n**💡 Astuce :** Partagez votre lien de parrainage avec vos contacts professionnels pour gagner des crédits bonus !",
+      "tags": ["parrainage", "data link", "filleuls", "recommandation", "bonus"],
+      "order": 5,
+      "createdAt": "2025-02-05T21:30:00Z",
+      "updatedAt": "2025-02-05T21:30:00Z"
+    }
+  ]
+}
