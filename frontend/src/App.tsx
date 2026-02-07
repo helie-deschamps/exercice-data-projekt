@@ -1,3 +1,4 @@
+import CategoryTile from "./components/category_tile/CategoryTile";
 import PageTitle from "./components/page_title/PageTitle";
 import QuestionCard from "./components/question_card/QuestionCard";
 import SearchSection from "./components/search_section/SearchSection";
@@ -17,7 +18,24 @@ function App() {
         "updatedAt": "2025-01-15T10:00:00Z"
       }} />
       <SearchSection style={{ gridColumn: '1 / span 2', gridRow: '2' }} />
-      <div style={{ gridColumn: '1 / span 2', gridRow: '3' }}>d</div>
+      <div style={{ gridColumn: '1 / span 2', gridRow: '3', display: 'flex', gap: '1rem' }}>
+        <CategoryTile category={{
+          "id": 1,
+          "name": "Usage & Fonctionnalités",
+          "slug": "usage-fonctionnalites",
+          "icon": "🎮",
+          "description": "Tout ce qui concerne la création, la gestion et l'exploitation d'une opération sur la plateforme Data Game, de A à Z.",
+          "order": 1
+        }} style={{ flex: 1 }}/>
+        <CategoryTile category={{
+          "id": 1,
+          "name": "Usage & Fonctionnalités",
+          "slug": "usage-fonctionnalites",
+          "icon": "🎮",
+          "description": "Tout ce qui concerne la création, la gestion et l'exploitation d'une opération sur la plateforme Data Game, de A à Z.",
+          "order": 1
+        }} style={{ flex: 1 }}/>
+      </div>
     </div>
   );
 }

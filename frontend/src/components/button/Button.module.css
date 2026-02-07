@@ -7,6 +7,9 @@
   font-family: 'Public Sans', system-ui, sans-serif;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .button:hover {
@@ -34,4 +37,13 @@
 
 .secondary:hover {
   background-color: hsla(0, 0%, 90%, 1);
+}
+
+.black {
+  background-color: hsla(0, 0%, 0%, 1);
+  color: white;
+}
+
+.black:hover {
+  background-color: hsla(0, 0%, 15%, 1);
 }
