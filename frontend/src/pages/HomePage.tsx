@@ -6,6 +6,7 @@ import QuestionCard from "../components/question_card/QuestionCard";
 import SearchSection from "../components/search_section/SearchSection";
 import fetchAllQuestionCategories from '../utils/api_fetch/fetchAllQuestionCategories';
 import { QuestionCategory } from '../types/QuestionCategory';
+import styles from './HomePage.module.css';
 
 function HomePage() {
   const [categories, setCategories] = useState<QuestionCategory[]>([]);
@@ -18,9 +19,9 @@ function HomePage() {
   }, []);
 
   return (
-    <div style={gridStyle}>
-      <PageTitle style={{ gridColumn: '1', gridRow: '1' }} title="Centre d'aide" subtitle="Bienvenue dans le centre de support officiel. Vous trouverez ici toutes les réponses aux questions les plus fréquentes, classées par thématiques."/>
-      <QuestionCard style={{ gridColumn: '2', gridRow: '1' }} question={{
+    <div className={styles.container}>
+      <PageTitle className={styles.pageTitle} title="Centre d'aide" subtitle="Bienvenue dans le centre de support officiel. Vous trouverez ici toutes les réponses aux questions les plus fréquentes, classées par thématiques."/>
+      <QuestionCard className={styles.questionCard} question={{
         "id": 1,
         "groupId": 1,
         "question": "Comment est organisée l'interface de Data Game ?",
@@ -30,8 +31,8 @@ function HomePage() {
         "createdAt": "2025-01-15T10:00:00Z",
         "updatedAt": "2025-01-15T10:00:00Z"
       }} />
-      <SearchSection style={{ gridColumn: '1 / span 2', gridRow: '2' }} />
-      <div style={{ gridColumn: '1 / span 2', gridRow: '3', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+      <SearchSection className={styles.searchSection} />
+      <div className={styles.categoriesGrid}>
         {categories.map((category, index) => (
           <CategoryTile 
             key={category.id} 
@@ -40,19 +41,9 @@ function HomePage() {
           />
         ))}
       </div>
-      <ContactTile style={{ gridColumn: '1 / span 2', gridRow: '4' }} />
+      <ContactTile className={styles.contactTile} />
     </div>
   );
 }
-
-const gridStyle: React.CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: '2fr 1fr',
-  gridTemplateRows: 'auto auto auto auto',
-  gap: '1rem',
-  maxWidth: '1286px',
-  margin: '60px auto',
-  paddingBottom: '60px',
-};
 
 export default HomePage;

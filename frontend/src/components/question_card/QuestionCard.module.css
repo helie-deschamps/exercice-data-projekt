@@ -9,6 +9,7 @@
   gap: .6em;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .category {
@@ -20,10 +21,16 @@
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-weight: 700;
   line-height: 1.4;
   color: white;
   margin: 0;
   margin-bottom: .4em;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1em;
+  }
 }

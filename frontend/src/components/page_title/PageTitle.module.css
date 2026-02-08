@@ -5,6 +5,7 @@
   padding: 2rem;
   border-radius: 1em;
   box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.05);
+  box-sizing: border-box;
 }
 
 .texts {
@@ -14,7 +15,7 @@
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5;
   font-weight: 700;
   margin: 0;
@@ -22,10 +23,16 @@
 }
 
 .subtitle {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 400;
   color: hsla(19, 100%, 50%, 1);
   margin-top: 0.5rem;
   margin-bottom: 0;
   line-height: 1.417;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1.25rem;
+  }
 }

@@ -51,3 +51,11 @@
   color: hsla(198, 100%, 31%, 1);
   border: 1px solid hsla(189, 100%, 43%, 0.16);
 }
+
+@media (max-width: 640px) {
+  .toast {
+    min-width: unset;
+    width: 100%;
+    padding: 0.875em 1em;
+  }
+}

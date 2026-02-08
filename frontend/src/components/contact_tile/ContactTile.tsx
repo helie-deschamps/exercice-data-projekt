@@ -4,14 +4,15 @@ import Button from '../button/Button';
 
 interface ContactTileProps {
   style?: React.CSSProperties;
+  className?: string;
 }
 
-const ContactTile: React.FC<ContactTileProps> = ({ style }) => {
+const ContactTile: React.FC<ContactTileProps> = ({ style, className }) => {
   return (
-    <div className={styles.container} style={style}>
+    <div className={`${styles.container} ${className || ''}`} style={style}>
       <div className={styles.iconWrapper}>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3795_6084)">
+            <g clipPath="url(#clip0_3795_6084)">
             <path d="M45.705 2.29492H48V25.1549H45.705V2.29492Z" fill="#FF5200"/>
             <path d="M43.425 29.7148H41.145V32.0098H45.705V25.1548H43.425V29.7148Z" fill="#FF5200"/>
             <path d="M38.85 27.4351H41.145V29.7151H38.85V27.4351Z" fill="#FF5200"/>

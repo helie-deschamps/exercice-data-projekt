@@ -7,15 +7,15 @@ import searchQuestions from '../../utils/api_fetch/searchQuestions';
 
 interface SearchSectionProps {
   style?: React.CSSProperties;
+  className?: string;
 }
 
-const SearchSection: React.FC<SearchSectionProps> = ({ style }) => {
+const SearchSection: React.FC<SearchSectionProps> = ({ style, className }) => {
   const [searchValue, setSearchValue] = useState('');
   const [autocompleteQuestions, setAutocompleteQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
     const fetchQuestions = async () => {
-      console.log('Searching questions for:', searchValue);
       if (searchValue.trim().length === 0) {
         setAutocompleteQuestions([]);
         return;
@@ -38,7 +38,7 @@ const SearchSection: React.FC<SearchSectionProps> = ({ style }) => {
   }, [searchValue]);
 
   return (
-    <div className={styles.container} style={style}>
+    <div className={`${styles.container} ${className || ''}`} style={style}>
       <div>
         <h2 className={styles.title}>Comment pouvons-nous vous aider ?</h2>
         <p className={styles.subtitle}>

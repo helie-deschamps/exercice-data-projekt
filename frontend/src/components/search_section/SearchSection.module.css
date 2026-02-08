@@ -6,6 +6,7 @@
   background: white;
   border-radius: 1em;
   box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.05);
+  box-sizing: border-box;
 }
 
 .title {
@@ -64,4 +65,11 @@
   border: none;
   border-top: 1px dashed hsla(0, 0%, 90%, 1);
   margin: 0;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1.25em;
+    gap: 1em;
+  }
 }
