@@ -5,7 +5,15 @@
   padding: 2em;
   background: white;
   border-radius: 1em;
-  box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.05);
+  box-shadow: none;
+  border: 1px solid transparent;
+  transition: box-shadow 0.3s, outline 0.3s, transform 0.3s;
+}
+
+.container:has(button:hover) {
+  box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.2);
+  outline: 2px solid hsla(19, 100%, 50%, 1);
+  transform: translate(0, -20px);
 }
 
 .imageWrapper {
@@ -27,7 +35,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.25em;
   flex: 1;
   align-items: flex-start;
 }
@@ -44,4 +52,5 @@
   line-height: 1.6;
   margin: 0;
   color: hsla(0, 0%, 40%, 1);
+  margin-bottom: .25em;
 }
