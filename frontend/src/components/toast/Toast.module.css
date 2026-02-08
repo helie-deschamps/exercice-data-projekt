@@ -6,18 +6,6 @@
   border-radius: 0.5em;
   position: relative;
   min-width: 20em;
-  animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(-1em);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .iconWrapper {
