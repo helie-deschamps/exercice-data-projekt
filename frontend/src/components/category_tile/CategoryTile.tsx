@@ -26,7 +26,7 @@ const CategoryTile = ({
       <div className={styles.content}>
         <h3 className={styles.title}>{category.name}</h3>
         <p className={styles.description}>{category.description}</p>
-        <Button isBlack={true} withArrow={true}>
+        <Button isBlack={true} withArrow={true} href={`/visualisation/${category.id}`}>
           Voir les questions
         </Button>
       </div>

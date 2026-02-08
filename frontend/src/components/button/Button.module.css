@@ -10,6 +10,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
+  text-decoration: none;
+}
+
+.button.link {
+  padding: 0.625em 1em;
+  font-size: 0.9375em;
 }
 
 .button:hover {
