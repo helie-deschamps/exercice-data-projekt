@@ -59,3 +59,9 @@
 .searchInput::placeholder {
   color: hsla(0, 0%, 60%, 1);
 }
+
+.separator {
+  border: none;
+  border-top: 1px dashed hsla(0, 0%, 90%, 1);
+  margin: 0;
+}

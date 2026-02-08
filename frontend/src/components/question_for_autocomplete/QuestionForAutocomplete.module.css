@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  background: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375em;
+  flex: 1;
+}
+
+.category {
+  font-size: 0.875em;
+  font-weight: 500;
+  color: hsla(208, 13%, 45%, 1);
+  background: hsla(210, 22%, 96%, 1);
+  padding: 0.25em 0.75em;
+  border-radius: 0.375em;
+  text-transform: none;
+  width: fit-content;
+}
+
+.question {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 0;
+  color: hsla(0, 0%, 15%, 1);
+  line-height: 1.4;
+}
+
+.highlight {
+  color: hsla(19, 100%, 50%, 1);
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.9375em;
+  line-height: 1.5;
+  margin: 0;
+  color: hsla(0, 0%, 55%, 1);
+}
