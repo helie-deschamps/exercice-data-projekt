@@ -1,0 +1,101 @@
+.container {
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Public Sans', system-ui, sans-serif;
+}
+
+.header:hover {
+  background: hsla(0, 0%, 98%, 1);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: hsla(0, 0%, 60%, 1);
+  flex-shrink: 0;
+  transition: color 0.3s;
+}
+
+.iconOpen {
+  color: hsla(19, 100%, 50%, 1);
+}
+
+.name {
+  font-size: 1.125em;
+  font-weight: 600;
+  color: hsla(0, 0%, 15%, 1);
+  text-align: left;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75em;
+  height: 1.75em;
+  padding: 0 0.5em;
+  background: hsla(0, 0%, 95%, 1);
+  color: hsla(0, 0%, 50%, 1);
+  border-radius: 0.875em;
+  font-size: 0.875em;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.badgeOpen {
+  background: hsla(19, 100%, 50%, 0.1);
+  color: hsla(19, 100%, 50%, 1);
+}
+
+.arrow {
+  width: 1.5em;
+  height: 1.5em;
+  color: hsla(0, 0%, 60%, 1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.contentOpen {
+  max-height: 2000px;
+  transition: max-height 0.35s ease-out;
+}
+
+.questionsContainer {
+  padding: 0 2em 1.5em 2em;
+}
+
+.separator {
+  border: none;
+  border-top: 1px dashed hsla(0, 0%, 90%, 1);
+  margin: 0;
+}
