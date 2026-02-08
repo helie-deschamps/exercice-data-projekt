@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CategoryTile from "./components/category_tile/CategoryTile";
 import ContactTile from "./components/contact_tile/ContactTile";
 import PageTitle from "./components/page_title/PageTitle";
 import QuestionCard from "./components/question_card/QuestionCard";
 import SearchSection from "./components/search_section/SearchSection";
+import fetchAllQuestionCategories from './utils/api_fetch/fetchAllQuestionCategories';
+import { QuestionCategory } from './types/QuestionCategory';
 
 function App() {
+  const [categories, setCategories] = useState<QuestionCategory[]>([]);
+
+  useEffect(() => {
+    const loadCategories = async () => {
+      setCategories(await fetchAllQuestionCategories());
+    };
+    loadCategories();
+  }, []);
+
   return (
     <div style={gridStyle}>
       <PageTitle style={{ gridColumn: '1', gridRow: '1' }} title="Centre d’aide" subtitle="Bienvenue dans le centre de support officiel. Vous trouverez ici toutes les réponses aux questions les plus fréquentes, classées par thématiques."/>
@@ -20,23 +31,15 @@ function App() {
         "updatedAt": "2025-01-15T10:00:00Z"
       }} />
       <SearchSection style={{ gridColumn: '1 / span 2', gridRow: '2' }} />
-      <div style={{ gridColumn: '1 / span 2', gridRow: '3', display: 'flex', gap: '1rem' }}>
-        <CategoryTile category={{
-          "id": 1,
-          "name": "Usage & Fonctionnalités",
-          "slug": "usage-fonctionnalites",
-          "icon": "🎮",
-          "description": "Tout ce qui concerne la création, la gestion et l'exploitation d'une opération sur la plateforme Data Game, de A à Z.",
-          "order": 1
-        }} style={{ flex: 1 }}/>
-        <CategoryTile category={{
-          "id": 1,
-          "name": "Usage & Fonctionnalités",
-          "slug": "usage-fonctionnalites",
-          "icon": "🎮",
-          "description": "Tout ce qui concerne la création, la gestion et l'exploitation d'une opération sur la plateforme Data Game, de A à Z.",
-          "order": 1
-        }} style={{ flex: 1 }}/>
+      <div style={{ gridColumn: '1 / span 2', gridRow: '3', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+        {categories.map((category, index) => (
+          <CategoryTile 
+            key={category.id}
+            category={category}
+            // le style qui suit permet d'étendre la dernière carte sur les deux colonnes si le nombre de catégories est impair, pour éviter d'avoir une carte toute seule sur la colonne de gauche
+            style={categories.length % 2 === 1 && index === categories.length - 1 ? { gridColumn: '1 / span 2' } : undefined}
+          />
+        ))}
       </div>
       <ContactTile style={{ gridColumn: '1 / span 2', gridRow: '4' }} />
     </div>
