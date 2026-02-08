@@ -1,12 +1,14 @@
 import { Question } from '../../types/Question';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
 /**
  * Fetch questions from the API based on search query
  * json-server's 'q' parameter performs full-text search across all string fields
  */
 const fetchQuestionsBySearch = async (q: string): Promise<Question[]> => {
   try {
-    const response = await fetch(`http://localhost:3001/questions?q=${encodeURIComponent(q)}`);
+    const response = await fetch(`${API_URL}/questions?q=${encodeURIComponent(q)}`);
     
     if (!response.ok) {
       throw new Error(`Failed to fetch questions: ${response.statusText}`);

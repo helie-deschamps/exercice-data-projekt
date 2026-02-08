@@ -35,7 +35,15 @@ La structure que j'ai suivie pour le frontend est la suivante :
 ```sh
 yarn install --immutable
 ```
-3. Build du frontend :
+
+3. Configurer les variables d'environnement :
+creer un fichier `.env` dans frontend/ avec le contenu suivant :
+```env
+VITE_API_URL=http://localhost:3001
+```
+ou remplacer `http://localhost:3001` par l'URL de votre API si elle est différente.
+
+4. Build du frontend :
 ```sh
 yarn run frontend:build
 ```
